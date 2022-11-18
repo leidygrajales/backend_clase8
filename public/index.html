@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Ingreso de Productos</title>
+  </head>
+
+  <body>
+    <h2>Registro productos</h2>
+    <form onsubmit="return send_data(this)">
+      <div>
+        <span>Nombre:</span>
+        <input type="text" name="name" required />
+      </div>
+      <br />
+      <div>
+        <span>Precio:</span>
+        <input type="number" name="price" required />
+      </div>
+      <br />
+      <div>
+        <span>Url imagen:</span>
+        <input type="text" name="thumbnail" required />
+      </div>
+      <hr />
+      <button type="submit">Enviar</button>
+    </form>
+
+    <script src="./send_form.js"></script>
+  </body>
+</html>
